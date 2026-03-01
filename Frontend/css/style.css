@@ -161,3 +161,11 @@ footer {
         align-items: center;
     }
 }
+
+/*  program.html css  */
+
+.sidebar a.active {
+    background: #00bfff;
+    color: black;
+}
+
