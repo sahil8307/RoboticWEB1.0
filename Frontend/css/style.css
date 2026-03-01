@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 /* General */
 body {
     margin: 0;
@@ -32,13 +36,17 @@ body {
 /* Main content */
 .main-content {
     margin-left: 250px;
-    width: 100%;
+    width: calc(100% - 250px);
+    min-height: 100vh;   /* ADD THIS LINE */
+    padding: 20px;
+    box-sizing: border-box;
     transition: 0.3s ease;
 }
 
 /* Expand content when sidebar hidden */
 .main-content.full {
     margin-left: 0;
+    width: 100%;
 }
 
 /* Toggle button */
@@ -98,6 +106,19 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: #00bfff;
+    font-size: 40px;
 }
 
 /* Sections */
@@ -201,3 +222,4 @@ footer {
     text-align: center;
     padding: 40px 20px;
 }
+
